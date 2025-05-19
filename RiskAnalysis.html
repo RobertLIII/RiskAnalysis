@@ -1,4 +1,3 @@
-<style>div.input, div.output pre { overflow-x: auto; white-space: pre; }</style>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7527,7 +7526,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># libraries</span>
@@ -7565,7 +7564,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># allows user to upload a txt file</span>
@@ -7807,7 +7806,7 @@ scope.google.colab._files = {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">extract_risk_sections</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
@@ -7862,7 +7861,7 @@ scope.google.colab._files = {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>30</pre>
 </div>
@@ -7882,7 +7881,7 @@ scope.google.colab._files = {
 <li>Identify and explain the <strong>top 5 most significant, company-specific risks</strong></li>
 </ul>
 <p>This step shifts the focus from paragraph-level extraction to a more strategic synthesis—useful for decision-makers who need a quick understanding of key exposures without reviewing each section individually.</p>
-<p>While the summaries are LLM-generated, the prompt is carefully designed to discourage generic language and emphasize <strong>Caterpillar’s own framing</strong> of risk. The output is returned in Markdown format for clear, readable display.</p>
+<p>While the summaries are LLM-generated, the prompt is carefully designed to discourage generic language and emphasize <strong>Caterpillar’s own framing</strong> of risk.</p>
 </div>
 </div>
 </div>
@@ -7891,7 +7890,7 @@ scope.google.colab._files = {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">generate_meta_summary</span><span class="p">(</span><span class="n">all_risks_text</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4"</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
@@ -7927,7 +7926,6 @@ scope.google.colab._files = {
     <span class="c1"># This prompt tells the model to:</span>
     <span class="c1"># 1. Write a short executive summary of the company's risk landscape.</span>
     <span class="c1"># 2. List the top 5 specific, company-grounded risks — not generic ones.</span>
-    <span class="c1"># It also asks for Markdown formatting to support nice rendering in Colab.</span>
     <span class="n">user_msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"""</span>
 <span class="s2">                You are reviewing the risk disclosures of Caterpillar Inc. from their 10-K filing.</span>
 <span class="s2">                Here is the full set of extracted risk paragraphs:</span>
@@ -7973,7 +7971,7 @@ scope.google.colab._files = {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">display_markdown</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
@@ -8033,10 +8031,13 @@ Caterpillar Inc. faces a diverse set of risks stemming from global economic cond
 <li><p><strong>Validate with Human Analysts</strong><br/>
 Collaborate with subject-matter experts to test the usefulness and trustworthiness of the generated summaries. Analyst feedback will guide refinement of prompts, output tone, and integration into real workflows.</p>
 </li>
+<li><p><strong>Accuracy Testing</strong>
+In addition to SME feedback, outputs should be tested for factual consistency using known inputs. Techniques like chain-of-thought prompting, comparison to ground truth data, or structured QA checks can help validate model accuracy before deployment.</p>
+</li>
 <li><p><strong>Refine Prompting and Evaluation</strong><br/>
 Continue iterating on the LLM prompt design to improve specificity, reduce repetition, and align outputs with internal standards and expectations.</p>
 </li>
-<li><p><strong>Incorporate Dynamic Context</strong> <em>(Planned)</em><br/>
+<li><p><strong>Incorporate Dynamic Context</strong><br/>
 Expand the model’s situational awareness by integrating:</p>
 <ul>
 <li><strong>Live market data</strong> (e.g., commodity prices, interest rates)</li>
@@ -8050,6 +8051,9 @@ Replace manual uploads with automated ingestion of 10-K filings from sources lik
 </li>
 <li><p><strong>Enable Risk Classification &amp; Tagging</strong><br/>
 Add functionality to group and label risks by category (e.g., regulatory, supply chain, operational), enabling integration with dashboards or portfolio monitoring systems.</p>
+</li>
+<li><p><strong>Security Enhancement</strong><br/>
+If external content is scraped for use in LLM prompts, there’s a risk of prompt injection—malicious text embedded in the source that can manipulate the model. This is especially important in public- or employee-facing tools. Input sanitization and validation are recommended to reduce this risk. Consider <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/">OWASP Top 10 for LLMs</a>.</p>
 </li>
 </ul>
 <p>This lays the groundwork for a practical AI-powered risk assistant that can accelerate risk review, surface emerging exposures, and scale intelligently across coverage areas.</p>
