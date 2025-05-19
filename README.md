@@ -56,3 +56,7 @@ Demo and write-up available at:
 ## 🛡 Disclaimer
 
 This project is a personal prototype created for educational and portfolio purposes. It is not affiliated with or intended to represent any company or brand. All content is illustrative only.
+
+**Robert Long**
+Data Scientist | ML/AI Strategist
+[https://intelligenciaexmachina.com/](https://intelligenciaexmachina.com/)
