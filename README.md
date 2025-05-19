@@ -32,12 +32,14 @@ Demo and write-up available at:
 
 ## 🧱 Folder Structure
 
+```
 /RiskSummaryAssistant/
 ├── risk_summary_generator.py # Main logic
 ├── notebook.ipynb # Walkthrough and code demo
 ├── example_inputs/ # Sample risk sections
 ├── html_exports/ # Optional rendered outputs
 └── README.md
+```
 
 ## 🚧 Known Limitations
 
